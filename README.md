@@ -17,7 +17,6 @@ Combine the following search queries using logical operators (AND, OR) to ensure
 Conduct the search across multiple academic databases to ensure a broad collection of relevant articles. Recommended databases include:
 - IEEE Xplore
 - ACM Digital Library
-- SpringerLink
 - ScienceDirect
 - Google Scholar
 
