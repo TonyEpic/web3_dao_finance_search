@@ -1,29 +1,34 @@
-# Research Article Processing
+# Web3 and DAOs in Financial Applications: Literature Review
 
-This project involves searching for research articles manually, downloading their metadata, and using two Python scripts to gather and filter relevant articles.
+## Introduction
+This repository contains the necessary instructions and files to replicate the literature search process for the thesis on Web3 and DAOs in financial applications. The process involves conducting a systematic literature review using predefined inclusion and exclusion criteria.
 
-## Steps to Process Articles
+## Manual Search Instructions
 
-### 1. Manual Search and Metadata Download
+### Step 1: Define Search Queries
+Combine the following search queries using logical operators (AND, OR) to ensure comprehensive coverage of the topic.
 
-Articles were searched for manually using various academic databases and journals. The metadata for these articles was then downloaded and saved in BibTeX format.
+1. SQ1: Web3 and financial applications
+2. SQ2: Decentralized Autonomous Organizations and finance
+3. SQ3: DAOs and governance
+4. SQ4: Web3 and legal challenges
 
-### 2. Filtering Relevant Articles
+### Step 2: Select Databases
+Conduct the search across multiple academic databases to ensure a broad collection of relevant articles. Recommended databases include:
+- IEEE Xplore
+- ACM Digital Library
+- SpringerLink
+- ScienceDirect
+- Google Scholar
 
-A Python script was used to filter the downloaded articles based on specific criteria such as peer-review status, recency, relevance, language, uniqueness, accessibility, and completeness. The filtered articles were then saved to a new BibTeX file.
+### Step 3: Execute the Search
+1. Access each selected database.
+2. Enter the combined search query: (SQ1 AND SQ2 AND SQ3 AND SQ4).
+3. Adjust filters to include only:
+   - Peer-reviewed articles and conference papers
+   - Articles published in the last ten years
+   - Studies focusing on Web3, DAOs, or related technologies
+   - Papers written in English
+4.Record the number of initial hits for each search query.
 
-### 3. Clustering and Further Filtering
 
-Another Python script was used to process the filtered articles. This script involved:
-- Extracting abstracts from the articles.
-- Using TF-IDF vectorization to convert abstracts into numerical data.
-- Clustering the articles based on their abstracts using KMeans clustering.
-- Identifying relevant articles based on a specific keyword within the clusters.
-- Saving the relevant articles to a final BibTeX file.
-
-### Output
-
-The output includes:
-- A table displaying clusters with the top keywords for each cluster.
-- A count of articles before and after filtering based on the specified keyword.
-- The final set of relevant articles saved in a new BibTeX file.
