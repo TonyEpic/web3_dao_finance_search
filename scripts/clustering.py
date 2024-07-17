@@ -85,7 +85,8 @@ def main(input_file, output_file, num_clusters, keyword):
 
 if __name__ == "__main__":
     input_file = "filtered_articles.bib"  # Replace with your .bib file path
+
     output_file = "filtered_articles_relevant.bib"  # Output file path
     num_clusters = 10  
-    keyword = "finance"  # Input word for filtering
+    keyword = "social impact"  # Input word for filtering
     main(input_file, output_file, num_clusters, keyword)
