@@ -4,8 +4,7 @@ from datetime import datetime
 
 def load_bib_file(file_path):
     with open(file_path, encoding='utf-8') as bib_file:
-        bib_database = bibtexparser.load(bib_file)
-    return bib_database
+        return bibtexparser.load(bib_file)
 
 def save_bib_file(bib_database, output_path):
     with open(output_path, 'w', encoding='utf-8') as bib_file:
@@ -26,8 +25,8 @@ def is_english(entry):
     return 'language' not in entry or entry['language'].lower() == 'english'
 
 def is_not_duplicate(entry, seen_dois, seen_titles, duplicates):
-    doi = entry.get('doi', '').lower()
-    title = entry.get('title', '').lower()
+    doi = entry.get('doi', '').strip().lower()
+    title = entry.get('title', '').strip().lower()
     
     if doi:
         if doi in seen_dois:
@@ -90,6 +89,6 @@ def process_bib_files_in_folder(folder_path, output_file):
     print(f"Filtered articles saved to {output_file}")
 
 if __name__ == "__main__":
-    folder_path = "bib_files\SQ1"  
+    folder_path = "./bib_files/SQ2"  # Replace with your .bib files directory path
     output_file = "filtered_articles.bib"
     process_bib_files_in_folder(folder_path, output_file)

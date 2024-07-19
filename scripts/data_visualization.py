@@ -63,7 +63,7 @@ def visualize_statistics(bib_database, keyword_map):
     plt.ylabel('Number of Articles')
     plt.title('Distribution of Articles by Year')
     plt.xticks(years, rotation=45)  # Ensure all years are displayed on the x-axis
-    plt.savefig(os.path.join('images', 'SQ1_distribution_by_year.png'))
+    plt.savefig(os.path.join('images', 'SQ2_distribution_by_year.png'))
     plt.close()
 
     # Top N keywords
@@ -88,7 +88,7 @@ def visualize_statistics(bib_database, keyword_map):
     plt.ylabel('Keywords')
     plt.title(f'Top {top_n} Keywords')
     plt.gca().invert_yaxis()
-    plt.savefig(os.path.join('images', 'SQ1_top_keywords.png'))
+    plt.savefig(os.path.join('images', 'SQ2_top_keywords.png'))
     plt.close()
 
     # Word cloud for keywords
@@ -98,7 +98,7 @@ def visualize_statistics(bib_database, keyword_map):
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis('off')
     plt.title('Word Cloud of Keywords')
-    plt.savefig(os.path.join('images', 'SQ1_word_cloud.png'))
+    plt.savefig(os.path.join('images', 'SQ2_word_cloud.png'))
     plt.close()
 
     # N-gram analysis from abstracts
@@ -121,7 +121,7 @@ def visualize_statistics(bib_database, keyword_map):
         plt.title(f'Top {top_n} {n}-grams from Abstracts')
         plt.gca().invert_yaxis()
         plt.tight_layout()  # Adjust layout to make room for labels
-        plt.savefig(os.path.join('images', f'SQ1_top_{n}_grams.png'))
+        plt.savefig(os.path.join('images', f'SQ2_top_{n}_grams.png'))
         plt.close()
 
 if __name__ == "__main__":

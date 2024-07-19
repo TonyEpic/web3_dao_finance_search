@@ -32,7 +32,7 @@ def remove_duplicates(bib_files):
     return unique_entries, total_entries
 
 def main():
-    folder_path = './bib_files/SQ1' 
+    folder_path = './bib_files/SQ2' 
     
     # List all .bib files in the folder
     bib_files = [os.path.join(folder_path, file) for file in os.listdir(folder_path) if file.endswith('.bib')]

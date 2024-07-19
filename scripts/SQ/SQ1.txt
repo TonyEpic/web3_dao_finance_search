@@ -1,7 +1,7 @@
 Web3 and Blockchain
 
-IEEE: https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Web3%20and%20Blockchain&highlight=true&returnType=SEARCH&matchPubs=true&rowsPerPage=100&pageNumber=2&returnFacets=ALL
+IEEE: https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Decentralized%20Autonomous%20Organizations%20and%20applications&highlight=true&returnType=SEARCH&matchPubs=true&rowsPerPage=100&pageNumber=2&returnFacets=ALL
 
-ACM: https://dl.acm.org/action/doSearch?AllField=Web3+and+blockchain&startPage=0&pageSize=50
+ACM: https://dl.acm.org/action/doSearch?AllField=Decentralized+Autonomous+Organizations+AND+applications&startPage=7&pageSize=50
 
-Science direct : https://www.sciencedirect.com/search?qs=Web3%20and%20Blockchain&accessTypes=openaccess&show=100&articleTypes=REV%2CFLA%2CDAT&offset=100
+Science direct : https://www.sciencedirect.com/search?qs=Decentralized%20Autonomous%20Organizations%20AND%20applications&show=100&offset=300
