@@ -95,5 +95,5 @@ if __name__ == "__main__":
     input_file = "filtered_articles.bib"  # Replace with your .bib file path
 
     num_clusters = 10  
-    keyword = "security and privacy"  # Input word for filtering
+    keyword = "finance"  # Input word for filtering
     main(input_file, num_clusters, keyword)

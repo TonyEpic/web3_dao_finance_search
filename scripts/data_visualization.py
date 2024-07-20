@@ -62,7 +62,7 @@ def visualize_statistics(bib_database, keyword_map):
     plt.xlabel('Year')
     plt.ylabel('Number of Articles')
     plt.title('Distribution of Articles by Year')
-    plt.xticks(years, rotation=45)  # Ensure all years are displayed on the x-axis
+    plt.xticks(years)  # Ensure all years are displayed on the x-axis
     plt.savefig(os.path.join('images', 'SQ3_distribution_by_year.png'))
     plt.close()
 

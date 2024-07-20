@@ -85,7 +85,6 @@ def process_bib_files_in_folder(folder_path, output_file):
     
     print(f"Number of articles before applying criteria: {num_entries_before}")
     print(f"Number of articles after applying criteria: {num_entries_after}")
-    print(f"Number of duplicates found: {num_duplicates}")
     print(f"Filtered articles saved to {output_file}")
 
 if __name__ == "__main__":
