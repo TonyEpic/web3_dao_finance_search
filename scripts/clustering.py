@@ -92,8 +92,8 @@ def main(input_file, num_clusters, keyword):
     print(f"Filtered articles saved to {output_file}")
 
 if __name__ == "__main__":
-    input_file = "filtered_articles.bib"  # Replace with your .bib file path
+    input_file = "SQ2_filtered_articles.bib"  # Replace with your .bib file path
 
     num_clusters = 10  
-    keyword = "finance"  # Input word for filtering
+    keyword = "social impact"  # Input word for filtering
     main(input_file, num_clusters, keyword)

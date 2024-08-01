@@ -1,7 +1,7 @@
-Decentralized Autonomous Organizations AND applications
+"Decentralized Autonomous Organizations" OR DAO AND applications
 
-IEEE: https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Decentralized%20Autonomous%20Organizations%20AND%20applications
+IEEE: https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=%22Decentralized%20Autonomous%20Organizations%22%20OR%20DAO%20AND%20applications&highlight=true&returnType=SEARCH&matchPubs=true&rowsPerPage=100&pageNumber=3&returnFacets=ALL
 
-ACM: https://dl.acm.org/action/doSearch?AllField=Decentralized+Autonomous+Organizations+AND+applications
+ACM: https://dl.acm.org/action/doSearch?AllField=%22Decentralized+Autonomous+Organizations%22+OR+DAO+AND+applications&startPage=5&pageSize=50
 
-Science direct : https://www.sciencedirect.com/search?qs=Decentralized%20Autonomous%20Organizations%20AND%20applications
+Science direct :https://www.sciencedirect.com/search?qs=%22Decentralized%20Autonomous%20Organizations%22%20OR%20DAO%20AND%20applications&show=100&offset=200
