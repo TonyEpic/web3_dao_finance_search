@@ -22,6 +22,8 @@ def save_bib_file(bib_database, output_path):
 def merge_similar_keywords(keywords, threshold=0.8):
     merged_keywords = {}
     for keyword in keywords:
+        if keyword == "":
+            continue
         merged = False
         for existing_keyword in merged_keywords:
             if Levenshtein.ratio(keyword, existing_keyword) >= threshold:
@@ -63,7 +65,7 @@ def visualize_statistics(bib_database, keyword_map):
     plt.ylabel('Number of Articles')
     plt.title('Distribution of Articles by Year')
     plt.xticks(years)  # Ensure all years are displayed on the x-axis
-    plt.savefig(os.path.join('images', 'SQ3_distribution_by_year.png'))
+    plt.savefig(os.path.join('images', 'distribution_by_year.png'))
     plt.close()
 
     # Top N keywords
@@ -88,7 +90,7 @@ def visualize_statistics(bib_database, keyword_map):
     plt.ylabel('Keywords')
     plt.title(f'Top {top_n} Keywords')
     plt.gca().invert_yaxis()
-    plt.savefig(os.path.join('images', 'SQ3_top_keywords.png'))
+    plt.savefig(os.path.join('images', 'top_keywords.png'))
     plt.close()
 
     # Word cloud for keywords
@@ -98,7 +100,7 @@ def visualize_statistics(bib_database, keyword_map):
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis('off')
     plt.title('Word Cloud of Keywords')
-    plt.savefig(os.path.join('images', 'SQ3_word_cloud.png'))
+    plt.savefig(os.path.join('images', 'word_cloud.png'))
     plt.close()
 
     # N-gram analysis from abstracts
@@ -114,18 +116,18 @@ def visualize_statistics(bib_database, keyword_map):
         
         ngrams, counts = zip(*top_ngrams)
         
-        plt.figure(figsize=(12, 8))  # Increased figure size for better readability
+        plt.figure(figsize=(14, 10))  # Increased figure size for better readability
         plt.barh(ngrams, counts, color='purple')
         plt.xlabel('Frequency')
-        plt.ylabel('N-grams')
+        plt.ylabel(f'{n}-grams')
         plt.title(f'Top {top_n} {n}-grams from Abstracts')
         plt.gca().invert_yaxis()
         plt.tight_layout()  # Adjust layout to make room for labels
-        plt.savefig(os.path.join('images', f'SQ3_top_{n}_grams.png'))
+        plt.savefig(os.path.join('images', f'top_{n}_grams.png'))
         plt.close()
 
 if __name__ == "__main__":
-    file_path = "filtered_articles.bib"
+    file_path = "final_articles.bib"
     keyword_map = {
         "blockchain technology": "blockchain",
         "authonomous organization": "dao",
@@ -138,7 +140,8 @@ if __name__ == "__main__":
         "decentralized autonomous organization": "dao",
         "decentralized autonomous organizations": "dao",
         "dapps": "dapp",
-        "distributed ledger technology": "distributed ledger"
+        "distributed ledger technology": "distributed ledger",
+        "decentralized finance": "defi"
     }
     bib_database = load_bib_file(file_path)
     visualize_statistics(bib_database, keyword_map)

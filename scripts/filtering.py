@@ -88,6 +88,6 @@ def process_bib_files_in_folder(folder_path, output_file):
     print(f"Filtered articles saved to {output_file}")
 
 if __name__ == "__main__":
-    folder_path = "./bib_files/SQ2"  # Replace with your .bib files directory path
-    output_file = "SQ2_filtered_articles.bib"
+    folder_path = "./bib_files/SQ4"  # Replace with your .bib files directory path
+    output_file = "SQ4_filtered_articles.bib"
     process_bib_files_in_folder(folder_path, output_file)

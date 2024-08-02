@@ -83,7 +83,7 @@ def main(input_file, num_clusters, keyword):
     relevant_entries = trace_articles_by_clusters(bib_database.entries, labels, keyword, num_clusters)
     filtered_count = len(relevant_entries)
     
-    output_file = f"filtered_articles_{keyword.replace(' ', '_')}.bib"
+    output_file = f"SQ4_filtered_articles_{keyword.replace(' ', '_')}.bib"
     if filtered_count > 0:
         save_bib_file(relevant_entries, output_file)
     
@@ -92,7 +92,7 @@ def main(input_file, num_clusters, keyword):
     print(f"Filtered articles saved to {output_file}")
 
 if __name__ == "__main__":
-    input_file = "SQ2_filtered_articles.bib"  # Replace with your .bib file path
+    input_file = "SQ4_filtered_articles.bib"  # Replace with your .bib file path
 
     num_clusters = 10  
     keyword = "social impact"  # Input word for filtering
